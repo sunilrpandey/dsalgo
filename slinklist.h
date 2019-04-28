@@ -2,6 +2,7 @@
 struct SNode
 {
 	int data;
+	int notneeded;
 	Node * next;
 	SNode(int val) {
 		data = val;
