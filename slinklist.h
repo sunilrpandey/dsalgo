@@ -3,7 +3,7 @@ struct SNode
 {
 	public:
 	int data;
-	int notneeded;
+	int notneeded;//comment from laptop
 	Node * next;
 	SNode(int val) {
 		data = val;
