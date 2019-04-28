@@ -1,7 +1,13 @@
 #pragma once
 struct SNode
 {
+	public:
 	int data;
+
+
+
+	int notneeded;//comment from web
+
 	Node * next;
 	SNode(int val) {
 		data = val;
@@ -25,4 +31,5 @@ public:
 	void clear(bool rec = true);
 	int sizeRec();
 	void clearRec();
+	//added this comment
 };
