@@ -1,6 +1,7 @@
 #pragma once
 struct SNode
 {
+	public:
 	int data;
 	Node * next;
 	SNode(int val) {
