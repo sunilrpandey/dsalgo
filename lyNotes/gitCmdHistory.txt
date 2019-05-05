@@ -1,0 +1,140 @@
+l
+git
+git config --global user.name "Sunil Pandey"
+git config --globla user.email "inkingmind@gmail.com"
+git config --global user.email "inkingmind@gmail.com"
+mkdir lygit
+cd lygit/
+git --version
+git init
+git clone https://github.com/sunilrpandey/LearnOpenGL.git
+git clone https://github.com/JoeyDeVries/LearnOpenGL.git
+git clone https://github.com/JoeyDeVries/LearnOpenGL.git
+ls
+cd lygit/
+git clone https://github.com/sunilrpandey/dsalgo.git
+ls
+git add addfile.txt 
+git status
+clear
+status
+git status
+git commit -m "just for testing add command" addfile.txt 
+git status
+ls
+git add slinklist.h
+vim slinklist.h
+git status
+git commit -m "no mesaage" slinklist.h
+git status
+git push slinklist.h
+git push
+ls
+vim addfile.txt 
+git pull
+vim addfile.txt 
+git pull
+git pull addfile.txt
+ls
+git pull
+git commit addfile.txt 
+git pull addfile.txt
+git log
+git log addfile.txt
+git commit addfile.txt 
+vim slinklist.h
+git pull
+git add slinklist.h 
+git commit -m "mergecheck" slinklist.h 
+vim slinklist.h
+git pull
+git merge
+git push 
+ls
+vim slinklist.h
+git pull
+git merge
+git status
+git pull
+git add -remove addfile.txt 
+git reset addfile.txt
+git pull 
+vim addfile.txt 
+git status
+git reset
+git checkout addfile.txt
+git pull 
+vim slinklist.h
+git add slinklist.h 
+git commit -m "comment from laptop" slinklist.h 
+git push slinklist.h
+git status
+git push
+git pull
+git merge
+vim slinklist.h
+git status
+git commit -am "merge fixed" 
+git push
+vim slinklist.h
+git log
+git reset --hard 7402
+git push
+git add addfile.txt 
+git status
+git commit 
+git add addfile.txt 
+git status
+vim addfile.txt 
+git status
+git commit -m "commments changed from add file"
+git commit -am "commments changed from add file"
+git push
+git pull
+vim addfile.txt 
+git pull 
+vim addfile.txt 
+vim addfile.txt 
+git status
+git commit -m "add mod" addfile.txt 
+git pull
+git merge addfile.txt
+vim addfile.txt 
+git commit addfile.txt 
+git commit 
+git pull
+git push addfile.txt
+vim addfile.txt 
+git status
+git commit slinklist.h 
+git add addfile.txt 
+git status
+git commit -m "commit done"
+git push
+git branch
+git branch new dsalgo_branch
+git branch testbranch
+git checkout testbranch
+git branch
+ls
+git rm addfile.txt 
+ls
+git status
+git commit -m "addfile deleted in branch"
+git push
+git branch 
+ls
+git checkout master
+ls
+git checkout testbranch 
+ls
+git status
+ls
+git push
+git push --set-upstream origin testbranch 
+git checkout master
+git branch testbranch 
+git merge testbranch 
+ls
+history > gitCmdHistory.txt
+history | cut -c 8- > gitCmdHistory.txt
