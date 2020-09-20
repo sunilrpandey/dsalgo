@@ -1,0 +1,4 @@
+*.out
+build/
+ly-build/
+.vscode/
