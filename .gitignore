@@ -3,3 +3,4 @@ build/
 ly-build/
 .vscode/
 .vs/
+bin/
