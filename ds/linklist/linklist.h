@@ -30,7 +30,9 @@ namespace ds
 		void RemoveNode(int pos);
 		void Show();
 		int Size();
-	private:
+
+        
+    private:
 		Node * head_;
 		int size_;
 	};
