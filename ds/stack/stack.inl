@@ -1,15 +1,17 @@
-#include "stack.h"
 namespace ds{
-    Stack::Stack(std::initializer_list<int> list) {
+    template <typename T> 
+	Stack<T>::Stack(std::initializer_list<T> list) {
         for (auto elem : list) {
             Push(elem);
         }
     }
-    int Stack::Size() {
+    template <typename T> 
+	int Stack<T>::Size() {
         return top_index_ + 1;
 
     }
-    void Stack::Show() {
+    template <typename T> 
+	void Stack<T>::Show() {
         int i = 0;
         std::cout << "Stack : ";
         while (i <= top_index_) {
@@ -18,19 +20,23 @@ namespace ds{
         }
         std::cout << std::endl;
     }
-    bool Stack::IsEmpty() {
+    template <typename T> 
+	bool Stack<T>::IsEmpty() {
         return top_index_ == -1;
     }
-    bool Stack::IsFull() {
-        return top_index_ == 1024;
+    template <typename T> 
+	bool Stack<T>::IsFull() {
+        return top_index_ == STACK_SIZE-1;
     }
-    int Stack::Top() {
+    template <typename T> 
+	T Stack<T>::Top() {
         if (IsEmpty()) {
             return INVALID_INT_VALUE;
         }
         return arr_[top_index_];
     }
-    int Stack::Pop() {
+    template <typename T> 
+	T Stack<T>::Pop() {
         if (IsEmpty()) {
             return INVALID_INT_VALUE;
         }
@@ -38,7 +44,8 @@ namespace ds{
             top_index_--;
             return res;
     }
-    void Stack::Push(int data) {
+    template <typename T> 
+	void Stack<T>::Push(T data) {
         top_index_++;
         assert(!IsFull());
         

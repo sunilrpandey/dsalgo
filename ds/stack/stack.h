@@ -6,25 +6,27 @@ constexpr int STACK_SIZE = 1024;
 
 namespace ds
 {
+	template <typename T>
 	class Stack
 	{
 	public:
 		Stack() = default;
-		Stack(std::initializer_list<int> list);
+		Stack(std::initializer_list<T> list);
 		
         bool IsEmpty();
 		bool IsFull();
         int Size();
 
-		int Top();
-		int Pop();
-		void Push(int data);
+		T Top();
+		T Pop();
+		void Push(T data);
 
         void Show();
     private:
 		int top_index_ = -1;
-		int arr_[STACK_SIZE];
+		T arr_[STACK_SIZE];
 
 	};
 }
 
+#include "stack.inl"
