@@ -18,7 +18,7 @@ namespace ds
         int Size();
 
 		T Top();
-		T Pop();
+		void Pop();
 		void Push(T data);
 
         void Show();

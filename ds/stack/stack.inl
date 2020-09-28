@@ -36,13 +36,13 @@ namespace ds{
         return arr_[top_index_];
     }
     template <typename T> 
-	T Stack<T>::Pop() {
+	void Stack<T>::Pop() {
         if (IsEmpty()) {
-            return INVALID_INT_VALUE;
+            return;
         }
-            int res = arr_[top_index_];
-            top_index_--;
-            return res;
+        int res = arr_[top_index_];
+        top_index_--;
+        return res;
     }
     template <typename T> 
 	void Stack<T>::Push(T data) {
