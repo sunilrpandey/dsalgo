@@ -3,7 +3,7 @@ int main()
 {
 	// Init q with initializer_list
     std::cout << "Init queue with integers 3 - 7" << std::endl;
-	ds::Queue q = { 3,4,5,6,7 };
+	ds::Queue<float> q = { 3.4,4.5,5.6,6.7,7.8 };
 	q.Show();
 	std::cout << "Queue Size : " << q.Size() << std::endl;
     
@@ -19,7 +19,7 @@ int main()
     std::cout << "Adding new items from 1-5" << std::endl;
     int i = 0;
 	while (i < 5) {
-		q.Enqueue(i+1);
+		q.Enqueue((i+1) * 1.2);
 		i++;
 	}
 	q.Show();
